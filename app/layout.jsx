@@ -4,6 +4,11 @@ export const metadata = {
   title: 'getColabb — Brand × Creator partnerships, friction-free',
   description:
     'Where brands and creators build partnerships that actually perform. Smart matching, escrow payments, verified analytics.',
+  openGraph: {
+    title: 'getColabb',
+    description: 'Partnerships, finally friction-free.',
+    images: ['/logo.png'],
+  },
 };
 
 export default function RootLayout({ children }) {

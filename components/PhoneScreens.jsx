@@ -1,5 +1,6 @@
 import Icon from './Icon';
 import BrandMark from './BrandMark';
+import LogoStack from './LogoStack';
 
 /* A set of stylized in-app screens rendered as React, framed inside a .phone */
 
@@ -32,15 +33,12 @@ function Avatar({ i = 0, size = 34, letter }) {
 /* 1 · Splash / Welcome */
 export function ScreenSplash() {
   return (
-    <div style={{ padding: '72px 24px 24px', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', gap: 18 }}>
-      <BrandMark size={84} />
-      <div className="eyebrow">v 1.0 · Welcome</div>
-      <h1 className="display" style={{ fontSize: 44 }}>
-        get<span className="display-italic grad-text">Colabb</span>
-      </h1>
-      <p className="body" style={{ fontSize: 13, maxWidth: 220 }}>
-        Where brands and creators build partnerships that actually perform.
-      </p>
+    <div style={{ padding: '72px 24px 24px', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', gap: 16 }}>
+      <LogoStack
+        size={88}
+        eyebrow="v 1.0 · Welcome"
+        tagline="Where brands and creators build partnerships that actually perform."
+      />
       <button className="btn btn-accent" style={{ marginTop: 8, width: '100%' }}>
         Get started <Icon name="arrow-right" size={14} color="#fff" />
       </button>

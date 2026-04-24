@@ -1,13 +1,10 @@
-import BrandMark from './BrandMark';
+import Wordmark from './Wordmark';
 
 export default function Nav() {
   return (
     <nav className="nav glass">
-      <a href="#top" className="row" style={{ gap: 10 }}>
-        <BrandMark size={32} />
-        <span className="display" style={{ fontSize: 22 }}>
-          get<span className="display-italic grad-text">Colabb</span>
-        </span>
+      <a href="#top">
+        <Wordmark size={30} />
       </a>
       <div className="nav-links">
         <a href="#features">Features</a>

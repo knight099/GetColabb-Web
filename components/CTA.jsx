@@ -14,7 +14,7 @@ export default function CTA() {
             position: 'absolute', inset: 0, pointerEvents: 'none',
             background: 'radial-gradient(600px 300px at 50% 0%, rgba(143,125,255,.3), transparent 60%), radial-gradient(500px 300px at 50% 100%, rgba(143,212,193,.3), transparent 60%)',
           }} />
-          <BrandMark size={64} />
+          <BrandMark size={96} />
           <h2 className="display" style={{ fontSize: 'clamp(32px, 5vw, 60px)', maxWidth: 720 }}>
             Your next collab is <span className="display-italic grad-text">one tap</span> away.
           </h2>

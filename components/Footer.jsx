@@ -1,16 +1,11 @@
-import BrandMark from './BrandMark';
+import Wordmark from './Wordmark';
 
 export default function Footer() {
   return (
     <footer style={{ padding: '40px 0 64px' }}>
       <div className="container">
         <div className="row" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
-          <div className="row" style={{ gap: 10 }}>
-            <BrandMark size={28} />
-            <span className="display" style={{ fontSize: 18 }}>
-              get<span className="display-italic grad-text">Colabb</span>
-            </span>
-          </div>
+          <Wordmark size={26} tone="muted" />
           <div className="row" style={{ gap: 22, fontSize: 13, color: 'var(--ink-3)', flexWrap: 'wrap' }}>
             <a href="#features">Features</a>
             <a href="#how">How it works</a>
